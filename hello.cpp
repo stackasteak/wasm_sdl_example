@@ -40,8 +40,8 @@ int main() {
   printf("here3\n");
   SDL_CreateWindowAndRenderer(800,400,0,&(state.window),&(state.renderer));
 
-  printf("here4\n");
-  emscripten_set_main_loop_arg(mainloop, &state, 0, 1);
+  //printf("here4\n");
+  //emscripten_set_main_loop_arg(mainloop, &state, 0, 1);
 
 
   return 0;
