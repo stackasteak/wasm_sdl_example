@@ -30,20 +30,20 @@ void mainloop(void * state){
 int main() {
 
   std::cout << "here1\n" <<std::flush;
-  SDL_Init(SDL_INIT_TIMER | SDL_INIT_VIDEO | SDL_INIT_EVENTS);
-  SDL_Window * window;
-  SDL_Renderer * renderer;
+  //SDL_Init(SDL_INIT_TIMER | SDL_INIT_VIDEO | SDL_INIT_EVENTS);
+  //SDL_Window * window;
+  //SDL_Renderer * renderer;
 
-  std::cout << "here2\n" <<std::flush;
-  allstate state(window,renderer);
+  //std::cout << "here2\n" <<std::flush;
+  //allstate state(window,renderer);
 
-  std::cout << "here3\n" <<std::flush;
-  SDL_CreateWindowAndRenderer(800,400,0,&(state.window),&(state.renderer));
+  //std::cout << "here3\n" <<std::flush;
+  //SDL_CreateWindowAndRenderer(800,400,0,&(state.window),&(state.renderer));
 
-  std::cout << "here4\n" <<std::flush;
-  emscripten_set_main_loop_arg(mainloop, &state, 0, 1);
+  //std::cout << "here4\n" <<std::flush;
+  //emscripten_set_main_loop_arg(mainloop, &state, 0, 1);
 
-  SDL_Quit();
+  //SDL_Quit();
 
 
   return 0;
