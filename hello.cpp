@@ -34,11 +34,11 @@ int main() {
   SDL_Window * window;
   SDL_Renderer * renderer;
 
-  printf("here2\n");
-  allstate state(window,renderer);
+  //printf("here2\n");
+  //allstate state(window,renderer);
 
-  printf("here3\n");
-  SDL_CreateWindowAndRenderer(800,400,0,&(state.window),&(state.renderer));
+  //printf("here3\n");
+  //SDL_CreateWindowAndRenderer(800,400,0,&(state.window),&(state.renderer));
 
   //printf("here4\n");
   //emscripten_set_main_loop_arg(mainloop, &state, 0, 1);
