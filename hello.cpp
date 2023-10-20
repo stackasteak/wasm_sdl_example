@@ -1,5 +1,5 @@
 #include <emscripten.h>
-#include <stdio.h>
+#include <iostream>
 #include <SDL.h>
 
 struct allstate{
@@ -29,18 +29,18 @@ void mainloop(void * state){
 
 int main() {
 
-  printf("here1\n");
+  std::cout << "here1\n" <<std::flush;
   SDL_Init(SDL_INIT_TIMER | SDL_INIT_VIDEO | SDL_INIT_EVENTS);
   SDL_Window * window;
   SDL_Renderer * renderer;
 
-  printf("here2\n");
+  std::cout << "here2\n" <<std::flush;
   allstate state(window,renderer);
 
-  printf("here3\n");
+  std::cout << "here3\n" <<std::flush;
   SDL_CreateWindowAndRenderer(800,400,0,&(state.window),&(state.renderer));
 
-  printf("here4\n");
+  std::cout << "here4\n" <<std::flush;
   emscripten_set_main_loop_arg(mainloop, &state, 0, 1);
 
   SDL_Quit();
