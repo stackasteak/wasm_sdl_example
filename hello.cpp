@@ -2,6 +2,7 @@
 #include <iostream>
 #include <SDL.h>
 
+/*
 struct allstate{
   SDL_Window * window;
   SDL_Renderer * renderer;
@@ -26,6 +27,8 @@ void mainloop(void * state){
   SDL_SetRenderTarget(state1->renderer, NULL);
   SDL_RenderPresent(state1->renderer);
 };
+
+*/
 
 int main() {
 
