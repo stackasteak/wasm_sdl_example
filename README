@@ -1,0 +1,1 @@
+SDL1.2 (hello_world_sdl.cpp) works on iOS but SDL2 (hello1.cpp) does not.
